@@ -56,7 +56,9 @@ def check_price_drop(url):
 
 
 def main():
-    url = input("Enter product URL: ") or "https://www.amazon.in/dp/B08C56KXQJ"
+    # Example URL: "https://www.amazon.in/dp/B08C56KXQJ"
+    url = input("Enter product URL: ")
+
     # Call the check_price_drop function every hour
     while True:
         check_price_drop(url)
